@@ -1,0 +1,141 @@
+.section1 {
+  height: 800px;
+}
+
+.section1-container {
+  display: flex;
+  height: 100%;
+  gap: 100px;
+}
+
+.section1-left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section1-left,
+.section1-right {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.section1-left h1 {
+  font-size: var(--size-7xl);
+}
+
+.section1-left p {
+  font-size: var(--size-base);
+  font-weight: 500;
+}
+
+.section1-left-footer {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.section1-left-footer button {
+  padding: 10px 30px;
+  font-size: var(--size-lg);
+  color: white;
+  background-color: #8b8e9d;
+  border: none;
+  font-weight: 500;
+}
+
+.section1-left-footer-chars {
+  display: flex;
+  gap: 7px;
+  color: #8d909f;
+}
+
+.section1-left-footer-chars i {
+  font-size: 50px;
+}
+
+.section1-left-footer p {
+  font-size: var(--size-xl);
+  color: #8d909f;
+}
+
+.section1-right-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1model,
+.section1rec,
+.section1dots,
+.section1whiterec,
+.section1dots2,
+.section1whiterec2 {
+  position: absolute;
+}
+
+.section1model {
+  z-index: 10;
+  top: 85px;
+}
+
+.section1rec {
+  top: 200px;
+}
+
+.section1dots {
+  right: 20px;
+  top: 600px;
+  z-index: 10;
+}
+
+.section1whiterec {
+  right: -35px;
+  top: 650px;
+}
+
+.section1dots2 {
+  right: 580px;
+  top: 300px;
+  z-index: 10;
+}
+
+.section1whiterec2 {
+  right: 635px;
+  top: 250px;
+}
+
+@media (max-width: 475px) {
+  .section1-left-container {
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section1-left-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section1-right {
+    display: none;
+  }
+}
+
+@media (max-width: 1536px) {
+  .section1dots,
+  .section1whiterec,
+  .section1dots2,
+  .section1whiterec2 {
+    display: none;
+  }
+}

@@ -1,0 +1,100 @@
+.section2 {
+  height: 1080px;
+  width: 100%;
+}
+
+.section2-container {
+  display: flex;
+  height: 100%;
+  gap: 100px;
+}
+
+.section2-left,
+.section2-right {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.section2-left-container {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
+
+.section2-left-title {
+  font-size: var(--size-7xl);
+}
+
+.section2-left-p {
+  font-weight: 500;
+}
+
+.section2-left-btn button {
+  font-size: var(--size-xl);
+  padding: 10px 40px;
+  background-color: transparent;
+}
+
+.section2-right-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2-right-girl1 {
+  position: absolute;
+  left: -100px;
+}
+
+.section2-right-girl2 {
+  position: absolute;
+  left: 60px;
+  bottom: 40px;
+  z-index: 10;
+}
+
+.section2-right-girl3 {
+  position: absolute;
+  left: 220px;
+}
+
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1024px) {
+}
+
+/* xl */
+@media (min-width: 1280px) {
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}
+
+@media (max-width: 1024px) {
+  .section2-right {
+    display: none;
+  }
+
+  .section2-left-container {
+    display: flex;
+    text-align: center;
+  }
+}
