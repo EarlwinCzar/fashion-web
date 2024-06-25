@@ -5,6 +5,7 @@ import Section1 from "./pages/Section1";
 import "./styles/utility.css";
 import Herobrands from "./components/Herobrands";
 import Section2 from "./pages/Section2";
+import Section3 from "./pages/Section3";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Section1 />
       <Herobrands />
       <Section2 />
+      <Section3 />
     </div>
   );
 }
