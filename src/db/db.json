@@ -1,0 +1,184 @@
+{
+  "prods": [
+    {
+      "id": 1,
+      "img": "/assets/tshirt1.jpg",
+      "product_name": "Product 1",
+      "price": 29.99,
+      "stock": 100,
+      "rating": 4.5,
+      "category": "sale"
+    },
+    {
+      "id": 2,
+      "img": "/assets/tshirt2.jpg",
+      "product_name": "Product 2",
+      "price": 59.99,
+      "stock": 50,
+      "rating": 4.0,
+      "category": "sale"
+    },
+    {
+      "id": 3,
+      "img": "/assets/tshirt3.jpg",
+      "product_name": "Product 3",
+      "price": 19.99,
+      "stock": 200,
+      "rating": 3.8,
+      "category": "sale"
+    },
+    {
+      "id": 4,
+      "img": "/assets/tshirt4.jpg",
+      "product_name": "Product 4",
+      "price": 99.99,
+      "stock": 25,
+      "rating": 4.9,
+      "category": "sale"
+    },
+    {
+      "id": 5,
+      "img": "/assets/tshirt5.jpg",
+      "product_name": "Product 5",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "sale"
+    },
+    {
+      "id": 6,
+      "img": "/assets/tshirt6.jpg",
+      "product_name": "Product 6",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "sale"
+    },
+    {
+      "id": 7,
+      "img": "/assets/tshirt7.jpg",
+      "product_name": "Product 7",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "newArrivals"
+    },
+    {
+      "id": 8,
+      "img": "/assets/tshirt8.jpg",
+      "product_name": "Product 8",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "newArrivals"
+    },
+    {
+      "id": 9,
+      "img": "/assets/acc1.jpg",
+      "product_name": "Product 9",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "accessories"
+    },
+    {
+      "id": 10,
+      "img": "/assets/acc2.jpg",
+      "product_name": "Product 10",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "accessories"
+    },
+    {
+      "id": 11,
+      "img": "/assets/acc3.jpg",
+      "product_name": "Product 11",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "accessories"
+    },
+    {
+      "id": 12,
+      "img": "/assets/acc4.jpg",
+      "product_name": "Product 12",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "accessories"
+    },
+    {
+      "id": 13,
+      "img": "/assets/acc5.jpg",
+      "product_name": "Product 13",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "accessories"
+    },
+    {
+      "id": 14,
+      "img": "/assets/acc6.jpg",
+      "product_name": "Product 14",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "accessories"
+    },
+    {
+      "id": 15,
+      "img": "/assets/model1.png",
+      "product_name": "Product 15",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "hot"
+    },
+    {
+      "id": 16,
+      "img": "/assets/model2.png",
+      "product_name": "Product 16",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "hot"
+    },
+    {
+      "id": 17,
+      "img": "/assets/model3.png",
+      "product_name": "Product 17",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "hot"
+    },
+    {
+      "id": 18,
+      "img": "/assets/model4.png",
+      "product_name": "Product 18",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "hot"
+    },
+    {
+      "id": 19,
+      "img": "/assets/model5.png",
+      "product_name": "Product 19",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "hot"
+    },
+    {
+      "id": 20,
+      "img": "/assets/model6.png",
+      "product_name": "Product 20",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "hot"
+    }
+  ]
+}
