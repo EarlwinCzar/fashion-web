@@ -1,5 +1,5 @@
 {
-  "homepage": "https://gitname.github.io/fashion-web",
+  "homepage": "https://EarlwinCzar.github.io/fashion-web",
   "name": "fashion",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +7,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "json-server": "^1.0.0-beta.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^6.23.1",

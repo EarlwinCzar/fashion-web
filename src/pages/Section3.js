@@ -1,54 +1,95 @@
 import React, { useEffect, useState } from "react";
 import "../styles/pagesstyles/section3.css";
+import axios from "axios";
 
 function Section3() {
   const [prods, setProds] = useState([]);
+  const [page, setPage] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("sale"); // Default category
 
   useEffect(() => {
-    fetch(process.env.PUBLIC_URL + "/db/db.json") // Adjust the URL as per your server setup
+    axios
+      .get("http://localhost:3000/prods")
       .then((res) => {
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return res.json();
+        setProds(res.data);
+        // Filter products based on the default category
+        const defaultFilteredProds = res.data.filter(
+          (prod) => prod.category === selectedCategory
+        );
+        setPage(defaultFilteredProds);
       })
-      .then((data) => {
-        console.log("Fetched data:", data); // Log the fetched data
-        if (Array.isArray(data.prods)) {
-          setProds(data.prods); // Update state with fetched array directly
-        } else {
-          throw new Error("Invalid data structure in response");
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching or parsing data:", error);
-        // Optionally handle the error state or display an error message
-      });
-  }, []);
+      .catch((err) => console.log(err));
+  }, [selectedCategory]);
 
-  useEffect(() => {
-    console.log("Prods state:", prods); // Log the state whenever it changes
-  }, [prods]);
+  const product_images_styles = {
+    display: "block",
+    maxWidth: "443px",
+    maxHeight: "550px",
+    userSelect: "none",
+  };
+
+  const handleChangePage = (event) => {
+    const value = event.currentTarget.getAttribute("data-value");
+    console.log("Value:", value);
+    // Update selected category
+    setSelectedCategory(value);
+    const filteredProds = prods.filter((prod) => prod.category === value);
+    console.log(filteredProds); // This will log the correct filtered products
+    setPage(filteredProds);
+  };
 
   return (
-    <section className="section3">
+    <section className="section3 container section">
       <article className="section3-container">
-        {prods && prods.length > 0 ? (
-          prods.map((prod) => (
-            <div key={prod.id}>
+        <div className="section3-header">
+          <p>Our Products</p>
+        </div>
+        <div className="section3-cat">
+          <ul>
+            <li>
+              <a data-value="sale" onClick={handleChangePage}>
+                Sale
+              </a>
+            </li>
+            <li>
+              <a data-value="hot" onClick={handleChangePage}>
+                Hot
+              </a>
+            </li>
+            <li>
+              <a data-value="newArrivals" onClick={handleChangePage}>
+                New Arrivals
+              </a>
+            </li>
+            <li>
+              <a data-value="accessories" onClick={handleChangePage}>
+                Accessories
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="section3-prods-wrapper">
+          {/* Render the filtered products */}
+          {page.map((p, i) => (
+            <div className="section3-prod" key={i}>
               <img
-                src={process.env.PUBLIC_URL + prod.img}
-                alt={prod.product_name}
+                style={product_images_styles}
+                src={process.env.PUBLIC_URL + p.img}
+                alt={p.product_name}
               />
-              <h2>{prod.product_name}</h2>
-              <p>Price: ${prod.price}</p>
-              <p>Stock: {prod.stock}</p>
-              <p>Rating: {prod.rating}</p>
+              <div className="section3-prod-name">
+                <p>{p.product_name}</p>
+              </div>
+              <div className="section3-prod-foot">
+                <p>{p.price}</p>
+                <p>
+                  {p.rating}
+                  <span className="section3-prod-foot-star">&#9733;</span>
+                </p>
+              </div>
             </div>
-          ))
-        ) : (
-          <p>Loading...</p>
-        )}
+          ))}
+        </div>
       </article>
     </section>
   );

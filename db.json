@@ -173,12 +173,48 @@
     },
     {
       "id": 20,
-      "img": "/assets/model6.png",
+      "img": "/assets/tshirt9.jpg",
       "product_name": "Product 20",
       "price": 49.99,
       "stock": 75,
       "rating": 4.2,
+      "category": "newArrivals"
+    },
+    {
+      "id": 21,
+      "img": "/assets/tshirt10.jpg",
+      "product_name": "Product 21",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "newArrivals"
+    },
+    {
+      "id": 22,
+      "img": "/assets/tshirt11.jpg",
+      "product_name": "Product 22",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "newArrivals"
+    },
+    {
+      "id": 23,
+      "img": "/assets/model6.png",
+      "product_name": "Product 23",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
       "category": "hot"
+    },
+    {
+      "id": 24,
+      "img": "/assets/tshirt12.jpg",
+      "product_name": "Product 24",
+      "price": 49.99,
+      "stock": 75,
+      "rating": 4.2,
+      "category": "newArrivals"
     }
   ]
 }
