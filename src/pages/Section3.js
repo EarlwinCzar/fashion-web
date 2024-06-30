@@ -30,11 +30,9 @@ function Section3() {
 
   const handleChangePage = (event) => {
     const value = event.currentTarget.getAttribute("data-value");
-    console.log("Value:", value);
     // Update selected category
     setSelectedCategory(value);
     const filteredProds = prods.filter((prod) => prod.category === value);
-    console.log(filteredProds); // This will log the correct filtered products
     setPage(filteredProds);
   };
 
@@ -86,6 +84,7 @@ function Section3() {
                   {p.rating}
                   <span className="section3-prod-foot-star">&#9733;</span>
                 </p>
+                <i class="fa-solid fa-cart-shopping"></i>
               </div>
             </div>
           ))}

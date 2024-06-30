@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.footer-first {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-first-icon {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.footer-foot li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials i {
+  font-size: 25px;
+}
+
+.footer-header {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-second,
+.footer-fourth {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-second li {
+  margin: 10px 0;
+}

@@ -1,0 +1,111 @@
+.section5 {
+  width: 100%;
+  min-height: 650px;
+}
+
+.section5-container {
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.section5-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.section5-header-text {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.section5-cards {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  justify-content: center;
+}
+
+.section5-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  max-width: 400px;
+}
+
+.fa-solid {
+  font-size: 30px;
+}
+
+.section5-card:nth-child(odd) {
+  background-color: rgba(141, 144, 159, 0.45);
+}
+
+.section5-card:nth-child(even) {
+  background-color: rgba(141, 144, 159, 0.75);
+}
+
+.section5-card-name {
+  font-size: 20px;
+}
+
+.section5-buttons {
+  display: flex;
+  gap: 200px;
+  flex-wrap: wrap;
+}
+
+.section5-buttons button {
+  padding: 10px;
+  color: #ffffff;
+  background-color: rgba(141, 144, 159, 0.75);
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* sm */
+@media (max-width: 767px) {
+  .section5-card {
+    display: flex;
+    height: 220px;
+    padding: 0;
+    text-align: center;
+    font-size: 0.7rem;
+    justify-content: center;
+  }
+  .fa-solid {
+    display: none;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1024px) {
+}
+
+/* xl */
+@media (min-width: 1280px) {
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}
+
+@media (max-width: 1024px) {
+}
