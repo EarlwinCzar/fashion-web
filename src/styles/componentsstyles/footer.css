@@ -6,6 +6,8 @@
   min-height: 300px;
   justify-content: center;
   align-items: center;
+  background-color: #aaacb8;
+  color: white;
 }
 
 .footer-container {
@@ -53,4 +55,23 @@
 
 .footer-second li {
   margin: 10px 0;
+}
+
+/* xs */
+@media (min-width: 475px) {
+}
+
+/* sm */
+@media (max-width: 639px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }

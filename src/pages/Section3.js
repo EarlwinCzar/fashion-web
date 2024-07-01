@@ -84,7 +84,9 @@ function Section3() {
                   {p.rating}
                   <span className="section3-prod-foot-star">&#9733;</span>
                 </p>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <button>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
               </div>
             </div>
           ))}
